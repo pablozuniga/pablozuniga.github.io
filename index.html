@@ -1,28 +1,47 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Hello world!</title>
-  </head>
-    <link type="style/css" href="style.css">
-  <body>
-    <header>
-      <ul>
-        <li><h1><a href="https://pablozuniga.github.io/tutorials.html">Tutorials</a></h1></li>
-        <li><h1><a href="https://pablozuniga.github.io/works.html">Works</a></h1></li>
-        <li><h1><a href="https://pablozuniga.github.io/blog.html">Blog</a></h1></li>
-        <li><h1><a href="https://pablozuniga.github.io/contact.html">Contact</a></h1></li>
-      </ul>
-    </header>
-    <div>
-      <h2>hello world!</h2>
-    </div>
-    <footer>
-      &copy;2017 Pablo Zuniga</br>
-      Some rights reserved</br>
-      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-    </footer>
-    <script>
-      alert(Hello world!);
-    </script>
-  </body>
+	<head>
+		<title>Pablo Zuniga | 2D Animator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Pablo Zuniga</h1>
+						<p>2D Animator &nbsp;&bull;&nbsp; Cartoonist &nbsp;&bull;&nbsp; Storyboard artist</p>
+						<nav>
+							<ul>
+								<li><a href="https://twitter.com/pablozunigah" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/pablozunigah" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+								<li><a href="https://www.github.com/pablozuniga" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href="mailto:p.j.zuniga.h@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">All right reserved &copy; 2017 Pablo J. Zuniga H. 2D Animator at <a href="http://www.esbirroestudios.com">Esbirro Estudios</a>.</span>
+					</footer>
+
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
 </html>
